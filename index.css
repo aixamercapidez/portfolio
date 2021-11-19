@@ -1,0 +1,251 @@
+@font-face{
+    font-family: texta;
+    src: url('tipografias/TEXTANARROWALT-BLACK.TTF') format('truetype');
+    font-weight: 800;
+}
+@font-face{
+    font-family: texta;
+    src: url('tipografias/TEXTANARROW-LIGHT.TTF') format('truetype');
+    font-weight: 300;
+}
+body { 
+    font-family: texta;
+}
+
+h1{
+color:  #2D4254;
+font-weight: 800;
+font-size: 120px;
+margin-top: 0%;
+margin-left: 10%;
+}
+h1:nth-of-type(2){
+    font-weight: 300;}
+main.home{
+    
+    height: 85vh;
+    
+    
+    background: url("SVG/Recurso\ 10-100.jpg") no-repeat;
+}
+
+button.bot {width: 150%; height: 30%; background-image: none; background-color: #2D4254 !important; color: #C6C9CE !important; border:none !important;
+padding: 7px; margin-top: 20px; margin-left: 90%; border-radius: 10px; font-size: 20px;}
+button.bot:nth-of-type(2) { background-color:#C6C9CE !important; }
+
+
+
+
+
+.flexbox-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+.flexbox-item{
+    width: 300px;
+    margin: 10px;
+    
+}
+.flexbox-item-1{
+   min-height: 50px;
+}
+.flexbox-item-2{
+    min-height: 50px;
+ }
+
+.flexbox-item-3{
+  
+    min-height: 800px;
+    min-width: 1800px;
+ }
+
+.uno{
+   padding-top: 7%;
+    color: #2D4254;
+    font-size: 150PX;
+    font-family: texta;
+    letter-spacing: 10px;
+    line-height: 20px;
+
+}
+.dos{
+    color: #2D4254;
+    font-size: 170PX;
+    font-family: lig;
+    letter-spacing: 20px;
+    
+}
+.tres{
+    color: #A9B7BA;
+    font-size: 100PX;
+    font-family: lig;
+    letter-spacing: 20px;
+}
+
+
+button{
+   
+    width:70px;
+    height:100px;
+    background-color: transparent;
+    background-size: 400%;
+    background-image:url("SVG/Recurso\ 8.svg") ;
+    border:0;
+    
+    
+    cursor:pointer;
+}
+button.ln{
+    width:70px;
+   
+    background-position:15px 250px;
+}
+button.ln:hover{
+    background-position:15px -178px;
+  }
+button.bh{
+    width:70px;
+   
+    background-position:-100px 250px;
+}
+  
+  button.bh:hover{
+    background-position:-100px -178px;
+}
+
+  button.ig{
+    width:70px;
+    background-position:-210px 250px;
+}
+  
+  button.ig:hover{
+    background-position:-210px -178px;
+}
+
+main{
+    border-top: 2px solid  #A9B7BA;;
+   
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+header label:hover{
+   cursor: pointer;
+   background-color:#E8EAEA ;
+}
+.menu{
+    position: absolute;
+    background-color: #E8EAEA;
+    width: 10%;
+    margin-left: -70%;
+    transition: all 0.5s;
+
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: lig;
+    color: #2D4254;
+    font-size: 20px;
+}
+#btn-menu:checked ~ .menu {
+    margin: 0;
+}
+#btn-menu:checked~ label{
+    background-color: #E8EAEA;
+}
+
+
+main.perfil{
+    height: 100vh;
+    background-color: #A9B7BA;
+}
+
+div [class|="col"]{
+    margin-top: 5%;
+    
+}
+p.titulo1{
+    font-weight: 800;
+    font-size: 60px;
+    color: #2D4254;
+}
+p.titulo2{
+    font-weight: 300;
+    font-size: 60px;
+    color: #FFFFFF;
+}
+div.primero{
+    font-weight: 300;
+    font-size: 22px;
+    color: #2D4254;
+    line-height: 22px;
+}
+div.segundo{
+    font-weight: 300;
+    font-size: 22px;
+    color: #FFFFFF;
+    line-height: 22px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+@media(max-width: 768px){
+    main{
+        background-position:center ;
+        align-items: center;
+        
+    }
+    button.bot {margin-left: 0px;}
+
+    div [class|="col"]{
+        margin-top: 2%;
+        
+    }
+    p.titulo1{
+        text-align: right;
+        font-size: 30px;
+        
+    }
+    p.titulo2{
+        
+        font-size: 30px;
+        
+    }
+    div.primero{
+        
+        font-size: 15px;
+        line-height: 15px;
+    }
+    div.segundo{
+        font-size: 15px;
+        line-height: 15px;
+    }
+   
+    img {
+        
+        width: 60%;
+      }
+
+}
